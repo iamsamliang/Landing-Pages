@@ -1,0 +1,435 @@
+/* Default Settings */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+img {
+  max-width: 100%;
+  height: 600px;
+}
+
+/* Header and Navigation Bar */
+#header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  padding: 0px 4vw;
+  line-height: 60px;
+  /* So the header and nav bar show through the picture */
+  z-index: 9999;
+}
+
+#header.nav-colored {
+  background: white;
+}
+
+#header .logo {
+  display: inline-block;
+  font-size: 30px;
+  margin-right: 60px;
+  width: 63px;
+}
+
+#header nav {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+#header nav a {
+  margin: 0 15px;
+  color: black;
+  opacity: 0.7;
+  padding: 30px 10px;
+}
+
+#header nav a:hover,
+#header nav a.active {
+  opacity: 1;
+  transition: all 0.2s;
+  box-shadow: inset 0px 6px 0 0 rgb(67, 67, 245);
+}
+
+/* Hero Banner and Service Description */
+.section-home-01 {
+  width: 100%;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 8%;
+  background: #e5e6e7;
+  position: relative;
+}
+
+.section-home-01 .img-screen {
+  position: absolute;
+  width: 50%;
+  float: right;
+  right: 0;
+  text-align: right;
+}
+
+@media screen and (max-width: 1280px) {
+  .section-home-01 .img-screen {
+    width: 30%;
+  }
+}
+
+.section-home-01 .img-screen img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.section-home-01 .section-content-01 {
+  position: relative;
+  width: 70%;
+  max-width: 450px;
+  text-align: left;
+}
+
+.section-home-01 .section-content-01 h1 {
+  font-family: sans-serif;
+  font-weight: 1500;
+  font-size: 30px;
+}
+
+.section-home-01 .section-content-01 p {
+  line-height: 1.5em;
+  font-size: 21px;
+  margin: 30px 0;
+}
+
+/* Benefits of the Service */
+.section-benefits {
+  height: 700px;
+  width: 100%;
+  background: #78a0c0;
+}
+
+.section-benefits .benefits-banner {
+  /* Need this for centering each div inside this div */
+  display: flex;
+  position: relative;
+  /* padding: 15% 25%; */
+  width: 80%;
+  height: 50%;
+  background: white;
+  margin: auto;
+  top: 25%;
+  /* Sets a border only on bottom */
+  border-style: none none solid none;
+  border-width: 3px;
+  border-color: #3023ae;
+  border-radius: 3px;
+  box-shadow: 0 0 12px black;
+}
+
+.section-benefits .benefits-banner .benefits-content-01,
+.section-benefits .benefits-banner .benefits-content-02,
+.section-benefits .benefits-banner .benefits-content-03 {
+  flex: 1;
+  padding: 60px;
+  /* position: relative; */
+  /* height: 100%; */
+  /* width: 20%; */
+  /* width: calc(100% / 3); */
+  /* height: 100%; */
+  /* margin: auto; */
+  /* text-align: left; */
+  /* flex-grow: 1; */
+}
+
+.benefits-content-01 h1,
+.benefits-content-02 h1,
+.benefits-content-03 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: darkblue;
+  padding-top: 20px;
+}
+
+.benefits-content-01 p,
+.benefits-content-02 p,
+.benefits-content-03 p {
+  padding-top: 30px;
+  opacity: 0.7;
+}
+
+.fas {
+  margin-top: -20px;
+}
+
+.fa-eye {
+  color: blue;
+}
+
+.fa-tachometer-alt {
+  color: darkred;
+}
+
+.fa-coins {
+  color: coral;
+}
+
+/* Social Proof Section */
+.section-social {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  background: #f1ece4;
+}
+
+.section-social #social-heading {
+  padding-top: 7%;
+  font-family: "Bebas Neue", cursive;
+}
+
+.section-social .social-quote {
+  position: absolute;
+  width: 50%;
+  top: 20%;
+  left: 25%;
+}
+
+.section-social .social-quote .name {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  font-family: "Dancing Script", cursive;
+}
+
+.section-social .social-quote #quote-01 {
+  width: 70%;
+  margin: auto;
+  font-size: 25px;
+  line-height: 1.5em;
+  font-family: "Playfair Display", serif;
+}
+
+.section-social .get-started-btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 60%;
+}
+
+.section-social .get-started-btn a {
+  padding: 18px 35px;
+  background: white;
+  border-radius: 6px;
+  color: black;
+  font-family: "Sora", sans-serif;
+  letter-spacing: 0.07em;
+  font-size: 15px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.section-social .get-started-btn a:hover {
+  background: lightgreen;
+  transition: background 0.5s ease-in;
+}
+
+.section-social .my-slides {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Call to Action */
+.call-to-action {
+  background: #5cdb95;
+  width: 100%;
+  height: 1000px;
+  /* Below 3 things Centers things apparently */
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+}
+
+.call-to-action .action-container {
+  text-align: center;
+  width: 40%;
+}
+
+.call-to-action .action-container .action-content {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2em;
+  line-height: 2.2em;
+}
+
+.call-to-action .action-container .trial-btn {
+  margin: 80px 0 36px;
+}
+
+.call-to-action .action-container .trial-btn a {
+  padding: 18px 35px;
+  background: black;
+  border-radius: 6px;
+  color: white;
+  font-family: "Sora", sans-serif;
+  letter-spacing: 0.09em;
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.call-to-action .action-container .trial-btn a:hover {
+  opacity: 1;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s linear;
+}
+
+/* Achievements Section */
+.section-achievements {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 370px;
+}
+
+.section-achievements .brands-header {
+  margin-top: 10%;
+  font-family: "Playfair Display", serif;
+  font-size: 13px;
+}
+.section-achievements .brands ul {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.section-achievements .brands ul li {
+  flex-grow: 1;
+  margin-right: 2.3576516%;
+  margin-right: 0;
+  width: 14.701957%;
+  vertical-align: top;
+  margin-top: 6.3576515979%;
+  margin-top: 4%;
+  list-style: none;
+  line-height: 1.9em;
+  font-weight: 300;
+}
+
+.section-achievements .brands ul li img {
+  width: 50%;
+  height: 60px;
+  vertical-align: middle;
+}
+
+/* Footer of Website */
+footer {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(92, 219, 149);
+  color: black;
+  line-height: 1.5;
+}
+
+footer a {
+  color: #eee;
+}
+
+.ft-title {
+  color: #fff;
+  font-family: ’Merriweather’, serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem /*200px*/;
+}
+
+@media only screen and (min-width: 29.8125rem /*477px*/) {
+  .ft-main {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 77.5rem /*1240px*/) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #00d188;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+  outline: none;
+}
+
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+
+.ft-social-list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
+}
+
+.ft-social-list li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: #333;
+}
+
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+  flex: 1; /* same as flex-grow: 1; */
+}
